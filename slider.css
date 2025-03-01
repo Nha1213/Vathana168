@@ -1,0 +1,202 @@
+:root {
+    font-size: 62.5%;
+    --font-size-100: 1.3rem;
+    --font-size-200: 1.8rem;
+    --font-size-300: 2.5rem;
+    --font-size-400: 3.5rem;
+    --font-size-500: 3.7rem;
+    --color-white-100: #ffffff;
+    --color-white-200: #e2e2e2;
+    --color-white-300: #c4c4c4;
+    --color-white-400:aliceblue;
+    --color-black-100: #000000;
+    --color-black-200: #302e29;
+    --color-black-300: #585854;
+    --color-orange-100: #ff7b00;
+    --color-orange-200: #ee790b;
+    --color-orange-300: #b45700;
+    --bg-transparent: rgba(0, 0, 0, 0.9);
+    --border-radius-100: 10px;
+    --border-radius-200: 20px;
+    --border-radius-300: 30px;
+    --color-brown_bk: #000000;
+    /* --transition-100: 0.1s ease;
+    --transition-200: 0.25s ease; */
+}
+
+/* silder */
+.silder{
+    margin-top: 10rem;
+    padding: 1rem 0rem;
+}
+
+.provide{
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--color-white-300);
+    text-transform: capitalize;
+}
+
+.slider-animation{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+    width: 80%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s 0.8s steps(90) infinite alternate-reverse; 
+}
+@keyframes typing {
+    from{
+        width: 10%;
+    }
+}
+
+.paragra{
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    width: 80%;
+    color: var(--color-white-300);
+}
+/*end silder */
+
+
+/* tabel  */
+.Buy-Premium{
+    margin-top: 5rem;
+}
+.buy{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-white-300);
+    text-transform: capitalize;
+}
+
+.mycard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+} 
+
+.card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--color-black-100);
+    border: #000000;
+    transition: all 0.6s;
+}
+
+.card .card-img-top{
+    border-radius: 10px 10px 0px 0px;
+    height: 25rem;
+    width: 100%;
+}
+
+.card .card-body p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #a7a7a2;
+    padding: 0rem 1rem;
+}
+
+.title{
+    margin-top: 2rem;
+    text-align: center;
+}
+.title h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.card:hover h1{
+    transform: scale(1.1);
+}
+
+.courseName{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+.courseName button{
+    background-color: var(--color-black-300);
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white-400);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 968px) {
+    .main-container{
+        width: 100%;
+        padding: 0rem 4rem;
+    }
+    .silder{
+        margin-top: 10rem;
+        padding: 1rem 0rem;
+    }
+    
+    .provide{
+        margin-bottom: 2rem;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    
+    .slider-animation{
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: rgb(255, 102, 0);
+        width: 80%;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: typing 2s 0.8s steps(90) infinite alternate-reverse; 
+    }
+
+    .mycard{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    } 
+}
+
+@media screen and (max-width: 668px){
+    .silder{
+        margin-top: 10rem;
+        padding: 1rem 0rem;
+    }
+    
+    .provide{
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    
+    .slider-animation{
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: rgb(255, 102, 0);
+        width: 80%;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: typing 2s 0.8s steps(90) infinite alternate-reverse; 
+    }
+    .mycard{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    } 
+    .main-container{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+    
+}

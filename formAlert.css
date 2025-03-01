@@ -1,0 +1,118 @@
+:root {
+    font-size: 62.5%;
+    --font-size-100: 1.3rem;
+    --font-size-200: 1.8rem;
+    --font-size-300: 2.5rem;
+    --font-size-400: 3.5rem;
+    --font-size-500: 3.7rem;
+    --color-white-100: #ffffff;
+    --color-white-200: #e2e2e2;
+    --color-white-300: #c4c4c4;
+    --color-white-400:aliceblue;
+    --color-black-100: #000000;
+    --color-black-200: #302e29;
+    --color-black-300: #585854;
+    --color-orange-100: #ff7b00;
+    --color-orange-200: #ee790b;
+    --color-orange-300: #b45700;
+    --bg-transparent: rgba(0, 0, 0, 0.9);
+    --border-radius-100: 10px;
+    --border-radius-200: 20px;
+    --border-radius-300: 30px;
+    --color-brown_bk: #000000;
+    /* --transition-100: 0.1s ease;
+    --transition-200: 0.25s ease; */
+}
+.massage-alert{
+    width: 50%;
+    background-color: var(--color-white-300);
+    height: auto;
+    margin: auto;
+    transform: translateY(-1200px);
+    transition: 0.5s;
+    border: 1px solid #e2e2e2;
+    border: 2px solid blue;
+    border-radius: 5px;
+    display: none;
+}
+.myall{
+    position: sticky;
+    top: 1%;
+    /* z-index: 2; */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.myall h1{
+    text-align: center;
+    color: blue;
+    padding: 1rem 0rem;
+    margin-top: 1rem;
+}
+
+.massage-alert p{
+    padding: 1rem 5rem;
+    color: #302e29;
+}
+@media screen and (max-width: 968px){
+    .massage-alert{
+        width: 100%;
+        background-color: var(--color-white-300);
+        height: auto;
+        margin: auto;
+        transform: translateY(1200px);
+        transition: 0.5s;
+        border: 1px solid #e2e2e2;
+        border: 5px solid blue;
+        border-radius: 5px;
+    }
+    .myall{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        overflow: hidden;
+    }
+    
+    .myall h1{
+        text-align: center;
+        color: blue;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+    }
+    
+    .massage-alert p{
+        padding: 1rem 2rem;
+        color: #302e29;
+    }
+}
+@media screen and (max-width: 668px){
+    .massage-alert{
+        width: 100%;
+        background-color: var(--color-white-300);
+        height: auto;
+        margin: auto;
+        transform: translateY(1200px);
+        transition: 0.5s;
+        border: 1px solid #e2e2e2;
+        border: 5px solid blue;
+        border-radius: 5px;
+    }
+    .myall{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        overflow: hidden;
+    }
+    
+    .myall h1{
+        text-align: center;
+        color: blue;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+    }
+    
+    .massage-alert p{
+        padding: 1rem 2rem;
+        color: #302e29;
+    }
+}
